@@ -1,0 +1,20 @@
+{
+  "$schemaVersion": 1,
+  "updatedAt": "2026-05-13T06:27:05.249Z",
+  "pkgs": [
+    {
+      "name": "@ikenga/pkg-engine-claude-code",
+      "latest": "0.1.0",
+      "detail": "pkgs/engine-claude-code.json",
+      "description": "Claude Code engine adapter for Ikenga — wraps the `claude` CLI as the default AI engine.",
+      "kind": "engine"
+    },
+    {
+      "name": "@ikenga/pkg-engine-noop",
+      "latest": "0.1.0",
+      "detail": "pkgs/engine-noop.json",
+      "description": "No-op engine adapter — proves the engine pluggability pattern; used as a test fixture and for shell-without-AI mode.",
+      "kind": "engine"
+    }
+  ]
+}
