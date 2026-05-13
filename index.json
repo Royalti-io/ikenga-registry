@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-05-13T06:27:05.249Z",
+  "updatedAt": "2026-05-13T07:32:24.208Z",
   "pkgs": [
     {
       "name": "@ikenga/pkg-engine-claude-code",
@@ -11,9 +11,9 @@
     },
     {
       "name": "@ikenga/pkg-engine-noop",
-      "latest": "0.1.0",
+      "latest": "0.1.1",
       "detail": "pkgs/engine-noop.json",
-      "description": "No-op engine adapter — proves the engine pluggability pattern; used as a test fixture and for shell-without-AI mode.",
+      "description": "No-op engine adapter for Ikenga — proves the engine pluggability pattern; used as a test fixture and for shell-without-AI mode.",
       "kind": "engine"
     }
   ]
