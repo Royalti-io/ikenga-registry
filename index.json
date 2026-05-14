@@ -1,7 +1,21 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-05-13T13:13:41.907Z",
+  "updatedAt": "2026-05-14T02:50:13.859Z",
   "pkgs": [
+    {
+      "name": "@ikenga/mcp-browser",
+      "latest": "0.2.0",
+      "detail": "pkgs/mcp-browser.json",
+      "description": "Model Context Protocol (MCP) server that lets agents drive native child webviews in the Ikenga desktop app — open a pane on a partner portal (Spotify-for-Artists, Bandcamp, Linkfire, etc.), snapshot it, click, fill, and wait. Bypasses iframe CSP `frame-ancestors` by using the system webview.",
+      "kind": "skill"
+    },
+    {
+      "name": "@ikenga/mcp-iyke",
+      "latest": "0.1.3",
+      "detail": "pkgs/mcp-iyke.json",
+      "description": "Model Context Protocol (MCP) server that exposes the Ikenga desktop app's iyke control bridge — drive a running Tauri AI workspace from any MCP client (Claude, Cursor, etc.).",
+      "kind": "skill"
+    },
     {
       "name": "@ikenga/pkg-engine-claude-code",
       "latest": "0.1.0",
