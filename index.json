@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-05-18T16:01:46.288Z",
+  "updatedAt": "2026-05-18T16:30:55.336Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -25,14 +25,14 @@
     },
     {
       "name": "@ikenga/pkg-engine-codex",
-      "latest": "0.1.0",
+      "latest": "0.2.0",
       "detail": "pkgs/engine-codex.json",
       "description": "Codex CLI engine adapter for Ikenga — install-time portability for the OpenAI `codex` CLI (ADR-012 Track C).",
       "kind": "engine"
     },
     {
       "name": "@ikenga/pkg-engine-gemini",
-      "latest": "0.1.0",
+      "latest": "0.2.0",
       "detail": "pkgs/engine-gemini.json",
       "description": "Gemini CLI engine adapter for Ikenga.",
       "kind": "engine"
