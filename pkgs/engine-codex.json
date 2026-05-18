@@ -1,0 +1,81 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/pkg-engine-codex",
+  "updatedAt": "2026-05-18T16:01:46.288Z",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "publishedAt": "2026-05-18T16:01:46.604Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-engine-codex/-/pkg-engine-codex-0.1.0.tgz",
+      "integrity": "sha512-MjzOuDNqcWgDkO2KyRMNhyAoQ7Nlpv7r7M/VunFXaB98Ipyq4IRSXRYS/oULX4DXoi+st8ItlaCYKoWQHsvScA==",
+      "size": 75873,
+      "manifest": {
+        "id": "com.ikenga.engine-codex",
+        "name": "Codex CLI Engine",
+        "version": "0.1.0",
+        "ikenga_api": "1",
+        "kind": "engine",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {},
+        "permissions": {
+          "shell.execute": [
+            "codex"
+          ],
+          "fs.read": [
+            "$pkg_data/sessions/**"
+          ],
+          "fs.write": [
+            "$pkg_data/sessions/**"
+          ]
+        },
+        "settings": {
+          "schema": [
+            {
+              "key": "codex_binary",
+              "type": "string",
+              "label": "Path to `codex` CLI",
+              "default": "codex",
+              "description": "Resolved against $PATH if not absolute."
+            },
+            {
+              "key": "model",
+              "type": "string",
+              "label": "Default model",
+              "default": "o4-mini"
+            }
+          ]
+        },
+        "engine": {
+          "agentId": "codex",
+          "display": "Codex CLI",
+          "capabilities": {
+            "streaming": true,
+            "toolUse": true,
+            "thinking": true,
+            "artifacts": true,
+            "fileAttachments": true,
+            "imageInput": true,
+            "slashCommands": true,
+            "modelSwitching": true,
+            "promptCaching": true,
+            "agenticTools": true,
+            "mcp": true,
+            "sessionResume": true
+          },
+          "onboarding": {
+            "requiredVaultKeys": [
+              "OPENAI_API_KEY"
+            ],
+            "requiredEnvVars": [],
+            "authCommand": "codex login",
+            "docsUrl": "https://developers.openai.com/codex/"
+          }
+        }
+      },
+      "deps": []
+    }
+  ]
+}
