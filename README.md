@@ -1,8 +1,15 @@
 # ikenga-registry
 
-Static JSON registry of published [`@ikenga/pkg-*`](https://www.npmjs.com/org/ikenga) packages,
-served via GitHub Pages and consumed by the Ikenga shell and `ikenga` CLI for pkg
-discovery, install, and update.
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
+> The static JSON registry of published Ikenga packages — served via GitHub Pages,
+> consumed by the shell and the `ikenga` CLI for pkg discovery, install, and update.
+
+## What it is
+
+A machine-generated catalog of every published [`@ikenga/pkg-*`](https://www.npmjs.com/org/ikenga)
+package: names, versions, manifests, tarball URLs, integrity hashes — plus a minisign
+signature over the index.
 
 **Endpoint:** https://royalti-io.github.io/ikenga-registry/index.json
 
@@ -52,6 +59,11 @@ in [`@ikenga/contract`](https://github.com/Royalti-io/ikenga-contract) (`./regis
 export). JSON Schemas are mirrored under [`schema/`](schema/) for non-TypeScript
 consumers and editor autocomplete.
 
+## Links
+
+- [`ikenga-pkgs`](https://github.com/Royalti-io/ikenga-pkgs) — the monorepo whose release workflow regenerates this index
+- [`ikenga`](https://github.com/Royalti-io/ikenga) — the desktop shell that consumes it
+
 ## License
 
-[Apache-2.0](LICENSE).
+Apache-2.0 — see [`LICENSE`](LICENSE).
