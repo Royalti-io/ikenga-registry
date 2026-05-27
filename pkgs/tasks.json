@@ -1,0 +1,92 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/pkg-tasks",
+  "updatedAt": "2026-05-27T17:33:16.529Z",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "publishedAt": "2026-05-27T17:23:47.817Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-tasks/-/pkg-tasks-0.2.0.tgz",
+      "integrity": "sha512-j6oTWtjqlxCw/EOqcQQrVaV+QDAUfKlq06nVIA+l0V+j9H9FhCGAreWsPtW6GNaEWWTagt1RifBRuAJuZsMSAw==",
+      "size": 181883,
+      "manifest": {
+        "id": "com.ikenga.tasks",
+        "name": "Tasks",
+        "version": "0.2.0",
+        "ikenga_api": "1",
+        "kind": "embedded",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {
+          "nav": [
+            {
+              "id": "tasks.index",
+              "label": "Tasks",
+              "icon": "check-square",
+              "section": "ops",
+              "route": "/pkg/com.ikenga.tasks/"
+            }
+          ],
+          "routes": [
+            {
+              "path": "/",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            }
+          ],
+          "csp": {
+            "script-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "style-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "font-src": [
+              "'self'",
+              "https://esm.sh",
+              "data:"
+            ],
+            "connect-src": [
+              "'self'",
+              "https://esm.sh",
+              "https://*.supabase.co",
+              "wss://*.supabase.co"
+            ]
+          }
+        },
+        "capabilities": {
+          "sqlite": {
+            "db": "ikenga.local"
+          },
+          "supabase": {
+            "required": true
+          }
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [
+            "https://esm.sh",
+            "https://*.supabase.co"
+          ],
+          "sqlite.tables": [
+            "tasks"
+          ],
+          "supabase.tables": [
+            "tasks",
+            "task_comments"
+          ],
+          "vault.keys": []
+        }
+      },
+      "deps": []
+    }
+  ]
+}

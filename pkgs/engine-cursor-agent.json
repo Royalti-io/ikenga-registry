@@ -1,0 +1,67 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/pkg-engine-cursor-agent",
+  "updatedAt": "2026-05-27T17:33:16.529Z",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "publishedAt": "2026-05-22T09:02:10.463Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-engine-cursor-agent/-/pkg-engine-cursor-agent-0.1.0.tgz",
+      "integrity": "sha512-kW3qYPHEKBeTafdOYDtu1TUUc5fe/W1wnzXYJjYzgFl+35qpKCKhZY0ke1aHYr2/bM6Du3FlP83YfVEmDeQb6g==",
+      "size": 29837,
+      "manifest": {
+        "id": "com.ikenga.engine-cursor-agent",
+        "name": "Cursor Agent",
+        "version": "0.1.0",
+        "ikenga_api": "1",
+        "kind": "engine",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {},
+        "permissions": {
+          "shell.execute": [
+            "cursor-agent"
+          ]
+        },
+        "settings": {
+          "schema": [
+            {
+              "key": "cursor_agent_binary",
+              "type": "string",
+              "label": "Path to `cursor-agent` CLI",
+              "default": "cursor-agent",
+              "description": "Resolved against $PATH if not absolute. Runtime is stubbed per ADR-013 Phase 4 — setting this has no effect today."
+            }
+          ]
+        },
+        "engine": {
+          "agentId": "cursor-agent",
+          "display": "Cursor Agent",
+          "capabilities": {
+            "streaming": false,
+            "toolUse": false,
+            "thinking": false,
+            "artifacts": false,
+            "fileAttachments": false,
+            "imageInput": false,
+            "slashCommands": false,
+            "modelSwitching": false,
+            "promptCaching": false,
+            "agenticTools": false,
+            "mcp": false,
+            "sessionResume": false
+          },
+          "onboarding": {
+            "requiredVaultKeys": [],
+            "requiredEnvVars": [],
+            "authCommand": null,
+            "docsUrl": "https://cursor.com/docs"
+          }
+        }
+      },
+      "deps": []
+    }
+  ]
+}
