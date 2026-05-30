@@ -201,6 +201,30 @@
                     "additionalProperties": false,
                     "default": {}
                   },
+                  "requires": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "kind": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "source": {
+                          "type": "string",
+                          "enum": ["git", "npx", "catalog", "local"]
+                        },
+                        "ref": {
+                          "type": "string"
+                        }
+                      },
+                      "required": ["kind", "name"],
+                      "additionalProperties": false
+                    },
+                    "default": []
+                  },
                   "migrations": {
                     "type": "string"
                   },
