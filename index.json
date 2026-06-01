@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-05-28T13:23:13.397Z",
+  "updatedAt": "2026-06-01T03:31:10.278Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -35,7 +35,8 @@
       "latest": "0.1.0",
       "detail": "pkgs/engine-cursor-agent.json",
       "description": "Cursor agent CLI engine adapter for Ikenga (scaffold-only; runtime stubbed per ADR-013 Phase 4).",
-      "kind": "engine"
+      "kind": "engine",
+      "visibility": "hidden"
     },
     {
       "name": "@ikenga/pkg-engine-gemini",
@@ -49,14 +50,16 @@
       "latest": "0.1.1",
       "detail": "pkgs/engine-noop.json",
       "description": "No-op engine adapter for Ikenga — proves the engine pluggability pattern; used as a test fixture and for shell-without-AI mode.",
-      "kind": "engine"
+      "kind": "engine",
+      "visibility": "hidden"
     },
     {
       "name": "@ikenga/pkg-hello",
       "latest": "0.1.0",
       "detail": "pkgs/hello.json",
       "description": "Minimal Ikenga pkg — proves the registry install pipeline end-to-end without bringing any UI, sidecar, or MCP surface.",
-      "kind": "skill"
+      "kind": "skill",
+      "visibility": "hidden"
     },
     {
       "name": "@ikenga/pkg-suite",
@@ -67,7 +70,7 @@
     },
     {
       "name": "@ikenga/pkg-tasks",
-      "latest": "0.2.0",
+      "latest": "0.4.0",
       "detail": "pkgs/tasks.json",
       "description": "Tasks — List, Agenda, Triage over the production tasks schema. Multi-file iframe pkg, no build step.",
       "kind": "embedded"
