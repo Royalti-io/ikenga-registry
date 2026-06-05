@@ -1,8 +1,43 @@
 {
   "$schemaVersion": 1,
   "name": "@ikenga/mcp-iyke",
-  "updatedAt": "2026-05-18T08:56:38.848Z",
+  "updatedAt": "2026-06-05T14:22:11.374Z",
   "versions": [
+    {
+      "version": "0.2.1",
+      "publishedAt": "2026-06-05T14:20:55.568Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/mcp-iyke/-/mcp-iyke-0.2.1.tgz",
+      "integrity": "sha512-q9p5LVNJNXvVwPA3NRWvW3s5ImmnzDgR8JJ3c84VD0u2ilNhncGeVFP4vrS1QuErubruYgZa9Q2siJHzqlq/ww==",
+      "size": 199051,
+      "manifest": {
+        "id": "com.ikenga.mcp-iyke",
+        "name": "Iyke MCP",
+        "version": "0.2.1",
+        "ikenga_api": "1",
+        "kind": "skill",
+        "author": {
+          "name": "Royalti, Inc.",
+          "key": "royalti"
+        },
+        "mcp": [
+          {
+            "name": "iyke",
+            "command": "bun",
+            "args": [
+              "run",
+              "src/index.ts"
+            ],
+            "lifecycle": "long-lived"
+          }
+        ],
+        "permissions": {
+          "net": [
+            "http://127.0.0.1:*"
+          ]
+        }
+      },
+      "deps": []
+    },
     {
       "version": "0.2.0",
       "publishedAt": "2026-05-18T08:56:22.501Z",

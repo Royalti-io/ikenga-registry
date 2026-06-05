@@ -1,8 +1,82 @@
 {
   "$schemaVersion": 1,
   "name": "@ikenga/pkg-engine-gemini",
-  "updatedAt": "2026-05-18T16:30:55.336Z",
+  "updatedAt": "2026-06-05T14:22:11.374Z",
   "versions": [
+    {
+      "version": "0.2.1",
+      "publishedAt": "2026-06-05T14:20:40.785Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-engine-gemini/-/pkg-engine-gemini-0.2.1.tgz",
+      "integrity": "sha512-mUzQ8HJk+XhZ/HhDRLKABzBfRdjO0awNRO2wLzjxmVOPMJhz6wsI9m9v4NPknuKhpufWCKzZaTg9Jx0R9YNEGA==",
+      "size": 68111,
+      "manifest": {
+        "id": "com.ikenga.engine-gemini",
+        "name": "Gemini CLI Engine",
+        "version": "0.2.1",
+        "ikenga_api": "1",
+        "kind": "engine",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {},
+        "permissions": {
+          "shell.execute": [
+            "gemini"
+          ],
+          "fs.read": [
+            "$pkg_data/sessions/**"
+          ],
+          "fs.write": [
+            "$pkg_data/sessions/**"
+          ]
+        },
+        "settings": {
+          "schema": [
+            {
+              "key": "gemini_binary",
+              "type": "string",
+              "label": "Path to `gemini` CLI",
+              "default": "gemini",
+              "description": "Resolved against $PATH if not absolute."
+            },
+            {
+              "key": "model",
+              "type": "string",
+              "label": "Default model",
+              "default": "gemini-2.0-flash"
+            }
+          ]
+        },
+        "engine": {
+          "agentId": "gemini",
+          "display": "Gemini CLI",
+          "capabilities": {
+            "streaming": true,
+            "toolUse": true,
+            "thinking": true,
+            "artifacts": true,
+            "fileAttachments": true,
+            "imageInput": true,
+            "slashCommands": true,
+            "modelSwitching": true,
+            "promptCaching": true,
+            "agenticTools": true,
+            "mcp": true,
+            "sessionResume": true
+          },
+          "onboarding": {
+            "requiredVaultKeys": [
+              "GEMINI_API_KEY"
+            ],
+            "requiredEnvVars": [],
+            "authCommand": "gemini auth",
+            "docsUrl": "https://geminicli.com/docs/"
+          }
+        }
+      },
+      "deps": []
+    },
     {
       "version": "0.2.0",
       "publishedAt": "2026-05-18T16:30:38.504Z",

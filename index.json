@@ -1,31 +1,31 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-06-05T01:23:59.052Z",
+  "updatedAt": "2026-06-05T14:22:11.374Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
-      "latest": "0.2.0",
+      "latest": "0.2.1",
       "detail": "pkgs/mcp-browser.json",
       "description": "Model Context Protocol (MCP) server that lets agents drive native child webviews in the Ikenga desktop app — open a pane on a partner portal (Spotify-for-Artists, Bandcamp, Linkfire, etc.), snapshot it, click, fill, and wait. Bypasses iframe CSP `frame-ancestors` by using the system webview.",
       "kind": "skill"
     },
     {
       "name": "@ikenga/mcp-iyke",
-      "latest": "0.2.0",
+      "latest": "0.2.1",
       "detail": "pkgs/mcp-iyke.json",
       "description": "Model Context Protocol (MCP) server that exposes the Ikenga desktop app's iyke control bridge — drive a running Tauri AI workspace from any MCP client (Claude, Cursor, etc.).",
       "kind": "skill"
     },
     {
       "name": "@ikenga/pkg-engine-claude-code",
-      "latest": "0.2.0",
+      "latest": "0.2.1",
       "detail": "pkgs/engine-claude-code.json",
       "description": "Claude Code engine adapter for Ikenga — wraps the `claude` CLI as the default AI engine.",
       "kind": "engine"
     },
     {
       "name": "@ikenga/pkg-engine-codex",
-      "latest": "0.2.0",
+      "latest": "0.2.1",
       "detail": "pkgs/engine-codex.json",
       "description": "Codex CLI engine adapter for Ikenga — install-time portability for the OpenAI `codex` CLI (ADR-012 Track C).",
       "kind": "engine"
@@ -40,14 +40,14 @@
     },
     {
       "name": "@ikenga/pkg-engine-gemini",
-      "latest": "0.2.0",
+      "latest": "0.2.1",
       "detail": "pkgs/engine-gemini.json",
       "description": "Gemini CLI engine adapter for Ikenga.",
       "kind": "engine"
     },
     {
       "name": "@ikenga/pkg-engine-noop",
-      "latest": "0.1.1",
+      "latest": "0.1.2",
       "detail": "pkgs/engine-noop.json",
       "description": "No-op engine adapter for Ikenga — proves the engine pluggability pattern; used as a test fixture and for shell-without-AI mode.",
       "kind": "engine",
@@ -70,7 +70,7 @@
     },
     {
       "name": "@ikenga/pkg-tasks",
-      "latest": "0.4.1",
+      "latest": "0.8.1",
       "detail": "pkgs/tasks.json",
       "description": "Tasks — List, Agenda, Triage over the production tasks schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"

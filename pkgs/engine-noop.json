@@ -1,8 +1,50 @@
 {
   "$schemaVersion": 1,
   "name": "@ikenga/pkg-engine-noop",
-  "updatedAt": "2026-05-13T07:32:24.208Z",
+  "updatedAt": "2026-06-05T14:22:11.374Z",
   "versions": [
+    {
+      "version": "0.1.2",
+      "publishedAt": "2026-06-05T14:20:38.088Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-engine-noop/-/pkg-engine-noop-0.1.2.tgz",
+      "integrity": "sha512-qlBeg2SnKe/N9w3O9eH0wGMWOXwEgfQzC78qcok37b1Y7dqqNXgFK0FaHa7YkD6kW1sq5fiB4SBlko99wR42ZQ==",
+      "size": 20286,
+      "manifest": {
+        "id": "com.ikenga.engine-noop",
+        "name": "No-op Engine",
+        "version": "0.1.2",
+        "ikenga_api": "1",
+        "kind": "engine",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {},
+        "engine": {
+          "agentId": "noop",
+          "display": "No-op (offline mode)",
+          "capabilities": {
+            "streaming": false,
+            "toolUse": false,
+            "thinking": false,
+            "artifacts": false,
+            "fileAttachments": false,
+            "imageInput": false,
+            "slashCommands": false,
+            "modelSwitching": false,
+            "promptCaching": false,
+            "agenticTools": false,
+            "mcp": false,
+            "sessionResume": false
+          },
+          "onboarding": {
+            "requiredVaultKeys": [],
+            "requiredEnvVars": []
+          }
+        }
+      },
+      "deps": []
+    },
     {
       "version": "0.1.1",
       "publishedAt": "2026-05-13T07:32:07.995Z",

@@ -1,8 +1,54 @@
 {
   "$schemaVersion": 1,
   "name": "@ikenga/mcp-browser",
-  "updatedAt": "2026-05-14T02:50:13.859Z",
+  "updatedAt": "2026-06-05T14:22:11.374Z",
   "versions": [
+    {
+      "version": "0.2.1",
+      "publishedAt": "2026-06-05T14:20:55.745Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/mcp-browser/-/mcp-browser-0.2.1.tgz",
+      "integrity": "sha512-fbIRmnlEtMnS6vtPzMorNWPXYrmmFZ4Cjk1CrlI8zppT9UGTni5y1ljlfDbfdqZR6r8dw2JPAxnJmXCVVngy2g==",
+      "size": 109779,
+      "manifest": {
+        "id": "com.ikenga.mcp-browser",
+        "name": "Browser MCP",
+        "version": "0.2.1",
+        "ikenga_api": "1",
+        "kind": "skill",
+        "author": {
+          "name": "Royalti, Inc.",
+          "key": "royalti"
+        },
+        "mcp": [
+          {
+            "name": "browser",
+            "command": "bun",
+            "args": [
+              "run",
+              "src/index.ts"
+            ],
+            "lifecycle": "long-lived"
+          }
+        ],
+        "capabilities": {
+          "webview": {
+            "child_webviews": true,
+            "partitions": [
+              "*"
+            ]
+          }
+        },
+        "permissions": {
+          "net": [
+            "http://127.0.0.1:*"
+          ],
+          "shell.execute": [
+            "bun"
+          ]
+        }
+      },
+      "deps": []
+    },
     {
       "version": "0.2.0",
       "publishedAt": "2026-05-14T02:50:14.055Z",
