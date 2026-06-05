@@ -1,8 +1,83 @@
 {
   "$schemaVersion": 1,
   "name": "@ikenga/pkg-tasks",
-  "updatedAt": "2026-06-01T03:31:10.278Z",
+  "updatedAt": "2026-06-05T01:23:59.052Z",
   "versions": [
+    {
+      "version": "0.4.1",
+      "publishedAt": "2026-06-05T01:22:35.601Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-tasks/-/pkg-tasks-0.4.1.tgz",
+      "integrity": "sha512-CPOlvmZndhysu/lAUDHR0Sz6vZnWQixOj5RyPqgFSQ/SKL/ZPLCOGa4oGRNcq5MTVC9frQlAWV8UXg2LOqyFYQ==",
+      "size": 394279,
+      "manifest": {
+        "id": "com.ikenga.tasks",
+        "name": "Tasks",
+        "version": "0.4.1",
+        "ikenga_api": "1",
+        "kind": "embedded",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {
+          "nav": [
+            {
+              "id": "tasks.index",
+              "label": "Tasks",
+              "icon": "check-square",
+              "section": "ops",
+              "route": "/pkg/com.ikenga.tasks/"
+            }
+          ],
+          "routes": [
+            {
+              "path": "/",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            }
+          ],
+          "csp": {
+            "script-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "style-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "font-src": [
+              "'self'",
+              "https://esm.sh",
+              "data:"
+            ],
+            "connect-src": [
+              "'self'",
+              "https://esm.sh"
+            ]
+          }
+        },
+        "capabilities": {
+          "sqlite": {
+            "db": "ikenga.local"
+          }
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [
+            "https://esm.sh"
+          ],
+          "sqlite.tables": [
+            "tasks"
+          ],
+          "vault.keys": []
+        }
+      },
+      "deps": []
+    },
     {
       "version": "0.4.0",
       "publishedAt": "2026-06-01T03:29:37.074Z",
