@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-06-05T14:22:11.374Z",
+  "updatedAt": "2026-06-15T18:16:41.043Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -60,13 +60,6 @@
       "description": "Minimal Ikenga pkg — proves the registry install pipeline end-to-end without bringing any UI, sidecar, or MCP surface.",
       "kind": "skill",
       "visibility": "hidden"
-    },
-    {
-      "name": "@ikenga/pkg-suite",
-      "latest": "0.3.0",
-      "detail": "pkgs/suite.json",
-      "description": "Business suite — Sales, Outbound, Email over Supabase. Multi-file iframe pkg, no build step. (Tasks shipped separately as com.ikenga.tasks.)",
-      "kind": "embedded"
     },
     {
       "name": "@ikenga/pkg-tasks",
