@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-06-22T02:44:33.799Z",
+  "updatedAt": "2026-06-22T02:45:35.095Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -84,7 +84,7 @@
     },
     {
       "name": "@ikenga/pkg-tasks",
-      "latest": "0.8.1",
+      "latest": "0.8.2",
       "detail": "pkgs/tasks.json",
       "description": "Tasks — List, Agenda, Triage over the production tasks schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
