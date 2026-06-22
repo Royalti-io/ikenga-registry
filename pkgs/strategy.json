@@ -1,0 +1,95 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/pkg-strategy",
+  "updatedAt": "2026-06-22T02:44:33.799Z",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "publishedAt": "2026-06-22T02:44:34.371Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-strategy/-/pkg-strategy-0.1.0.tgz",
+      "integrity": "sha512-EkvDfOjB3fUbCS4K1xrKlO9Sfj3m+xXaP/iOjVT5WfGxjNlzjCFmMEXaW0CrRGl+4DKzx9eigX1t/ioqLWuxaw==",
+      "size": 315776,
+      "manifest": {
+        "id": "com.ikenga.strategy",
+        "name": "Strategy",
+        "version": "0.1.0",
+        "ikenga_api": "1",
+        "kind": "embedded",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {
+          "nav": [
+            {
+              "id": "strategy.index",
+              "label": "Strategy",
+              "icon": "target",
+              "section": "ops",
+              "route": "/pkg/com.ikenga.strategy/"
+            }
+          ],
+          "routes": [
+            {
+              "path": "/",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            }
+          ],
+          "csp": {
+            "script-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "style-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "font-src": [
+              "'self'",
+              "https://esm.sh",
+              "data:"
+            ],
+            "connect-src": [
+              "'self'",
+              "https://esm.sh"
+            ]
+          }
+        },
+        "capabilities": {
+          "sqlite": {
+            "db": "ikenga.local"
+          }
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [
+            "https://esm.sh"
+          ],
+          "sqlite.tables": [
+            "strategic_initiatives",
+            "architecture_decisions",
+            "ideas_backlog",
+            "feature_score_history",
+            "review_items",
+            "strategy_objectives",
+            "strategy_key_results",
+            "strategy_cycles"
+          ],
+          "vault.keys": []
+        },
+        "requires": [
+          {
+            "kind": "skill",
+            "name": "skill-strategy"
+          }
+        ]
+      },
+      "deps": []
+    }
+  ]
+}

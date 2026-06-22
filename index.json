@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-06-15T18:16:41.043Z",
+  "updatedAt": "2026-06-22T02:44:33.799Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -60,6 +60,27 @@
       "description": "Minimal Ikenga pkg — proves the registry install pipeline end-to-end without bringing any UI, sidecar, or MCP surface.",
       "kind": "skill",
       "visibility": "hidden"
+    },
+    {
+      "name": "@ikenga/pkg-mail",
+      "latest": "0.2.1",
+      "detail": "pkgs/mail.json",
+      "description": "Mail — Inbox, Triage, All, Drafts over the production mail schema. No-build iframe pkg; deterministic CSS vendoring build.",
+      "kind": "embedded"
+    },
+    {
+      "name": "@ikenga/pkg-research",
+      "latest": "0.1.0",
+      "detail": "pkgs/research.json",
+      "description": "Research — Reports (list+detail), Sources (monitored register), Personas (ICP grid) over the research_notes + research_sources schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
+      "kind": "embedded"
+    },
+    {
+      "name": "@ikenga/pkg-strategy",
+      "latest": "0.1.0",
+      "detail": "pkgs/strategy.json",
+      "description": "Strategy — OKR board (board + list), Cycles, Reviews over the production strategy schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
+      "kind": "embedded"
     },
     {
       "name": "@ikenga/pkg-tasks",
