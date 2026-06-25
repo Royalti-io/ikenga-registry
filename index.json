@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-06-24T17:00:48.612Z",
+  "updatedAt": "2026-06-25T23:36:40.002Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -15,6 +15,13 @@
       "detail": "pkgs/mcp-iyke.json",
       "description": "Model Context Protocol (MCP) server that exposes the Ikenga desktop app's iyke control bridge — drive a running Tauri AI workspace from any MCP client (Claude, Cursor, etc.).",
       "kind": "skill"
+    },
+    {
+      "name": "@ikenga/pkg-browser",
+      "latest": "0.1.0",
+      "detail": "pkgs/browser.json",
+      "description": "Playwright verb engine behind Ikenga's /iyke/browser/* contract — replaces the Rust chromiumoxide Chrome engine (ADR-018). Managed (dedicated profile) + Attach (everyday Chrome via the official Playwright extension).",
+      "kind": "embedded"
     },
     {
       "name": "@ikenga/pkg-engine-claude-code",

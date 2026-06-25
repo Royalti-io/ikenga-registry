@@ -1,0 +1,49 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/pkg-browser",
+  "updatedAt": "2026-06-25T23:36:40.002Z",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "publishedAt": "2026-06-25T23:15:08.455Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-browser/-/pkg-browser-0.1.0.tgz",
+      "integrity": "sha512-KaC/xNVv+H+7oR6iekjhLMyKp30u5JKdJN1HVLB+p04vbmC8JXz/Lt/8aAtGkB6Vm1+wE0p2Ynbx1kPod+I/AA==",
+      "size": 17602316,
+      "manifest": {
+        "id": "com.ikenga.sidecar-playwright-browser",
+        "name": "Playwright Browser Engine",
+        "version": "0.1.0",
+        "ikenga_api": "2",
+        "kind": "embedded",
+        "author": {
+          "name": "Royalti, Inc.",
+          "key": "royalti"
+        },
+        "//": "A1 (plans/playwright-adoption/10-productionize-a1.md). The shell's PlaywrightProxy lazy-spawns `node dist/sidecar.js` on first chrome request, resolving bin_path via SidecarsRegistry.resolve(\"pa-playwright-browser\"). Declaring sidecars[] only registers the (pkg_id,name)->bin_path mapping (registries/sidecars.rs register() validates the bin path + inserts into a HashMap; it NEVER spawns). There is deliberately NO mcp[] block: the kernel SidecarSupervisor auto-spawn path (lifecycle.rs start_supervised) is gated on at least one mcp[].is_long_lived() entry, so omitting mcp[] guarantees the kernel will NOT boot a competing process. The shell keeps exclusive control over when node runs.",
+        "sidecars": [
+          {
+            "name": "pa-playwright-browser",
+            "bin": "dist/sidecar.js",
+            "stdio": "json",
+            "auto_restart": false
+          }
+        ],
+        "permissions": {
+          "shell.execute": [
+            "node"
+          ],
+          "net": [
+            "http://127.0.0.1:*"
+          ],
+          "fs.read": [
+            "$pkg_data/**"
+          ],
+          "fs.write": [
+            "$pkg_data/**"
+          ]
+        }
+      },
+      "deps": []
+    }
+  ]
+}
