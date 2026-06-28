@@ -1,0 +1,53 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/skill-thunderbird",
+  "updatedAt": "2026-06-28T23:43:10.459Z",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "publishedAt": "2026-06-28T23:43:10.677Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/skill-thunderbird/-/skill-thunderbird-0.2.0.tgz",
+      "integrity": "sha512-seLXBhfNawFmteLpBF8DOeTM+IcaTEWiNlERdxLJ3EtTTJ+0o29myQSFKuF9aPk5i9uWq16z+PPs27E6G+utjQ==",
+      "size": 26394,
+      "manifest": {
+        "id": "com.ikenga.skill-thunderbird",
+        "name": "Thunderbird Mail",
+        "version": "0.2.0",
+        "ikenga_api": "1",
+        "kind": "skill",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "permissions": {
+          "shell.execute": [
+            "grep",
+            "stat",
+            "pgrep",
+            "tail",
+            "sed",
+            "node",
+            "npx"
+          ],
+          "fs.read": [
+            "$home/.thunderbird/**",
+            "$home/snap/thunderbird/**",
+            "$home/Library/Thunderbird/**",
+            "$home/.icedove/**"
+          ],
+          "fs.write": [
+            "$pkg_data/**"
+          ],
+          "net": [
+            "imap://*",
+            "imaps://*"
+          ],
+          "vault.keys": [
+            "*IMAP*"
+          ]
+        }
+      },
+      "deps": []
+    }
+  ]
+}

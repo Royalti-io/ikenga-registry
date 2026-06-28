@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-06-28T20:29:58.249Z",
+  "updatedAt": "2026-06-28T23:43:10.459Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -95,6 +95,13 @@
       "detail": "pkgs/tasks.json",
       "description": "Tasks — List, Agenda, Triage over the production tasks schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
+    },
+    {
+      "name": "@ikenga/skill-thunderbird",
+      "latest": "0.2.0",
+      "detail": "pkgs/skill-thunderbird.json",
+      "description": "Thunderbird mail skill — read/search the local Thunderbird mbox store and save reply drafts to the IMAP server.",
+      "kind": "skill"
     }
   ]
 }
