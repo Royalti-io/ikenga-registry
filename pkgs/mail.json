@@ -1,8 +1,96 @@
 {
   "$schemaVersion": 1,
   "name": "@ikenga/pkg-mail",
-  "updatedAt": "2026-06-22T02:44:33.799Z",
+  "updatedAt": "2026-07-04T17:57:17.464Z",
   "versions": [
+    {
+      "version": "0.3.0",
+      "publishedAt": "2026-07-04T17:56:53.313Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-mail/-/pkg-mail-0.3.0.tgz",
+      "integrity": "sha512-IKWWTXjljwON2qCJvog+ouCdokiifH8ZgwYZf3eY3NYMYzdv6/DJcCOXKHUqV8W4k856IqfmhaTrarELny6C+Q==",
+      "size": 333533,
+      "manifest": {
+        "id": "com.ikenga.mail",
+        "name": "Mail",
+        "version": "0.3.0",
+        "ikenga_api": "1",
+        "kind": "embedded",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {
+          "nav": [
+            {
+              "id": "mail.index",
+              "label": "Mail",
+              "icon": "mail",
+              "section": "ops",
+              "route": "/pkg/com.ikenga.mail/"
+            }
+          ],
+          "routes": [
+            {
+              "path": "/",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            }
+          ],
+          "csp": {
+            "script-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "style-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "font-src": [
+              "'self'",
+              "https://esm.sh",
+              "data:"
+            ],
+            "connect-src": [
+              "'self'",
+              "https://esm.sh"
+            ]
+          }
+        },
+        "capabilities": {
+          "sqlite": {
+            "db": "ikenga.local"
+          }
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [
+            "https://esm.sh"
+          ],
+          "sqlite.tables": [
+            "email_messages",
+            "email_replies",
+            "email_drafts",
+            "contacts",
+            "mail_thread_state"
+          ],
+          "vault.keys": [],
+          "engine": [
+            "invoke"
+          ]
+        },
+        "requires": [
+          {
+            "kind": "skill",
+            "name": "skill-mail"
+          }
+        ]
+      },
+      "deps": []
+    },
     {
       "version": "0.2.1",
       "publishedAt": "2026-06-22T02:44:34.033Z",

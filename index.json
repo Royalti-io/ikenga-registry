@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-06-28T23:43:10.459Z",
+  "updatedAt": "2026-07-04T17:57:17.464Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -21,6 +21,13 @@
       "latest": "0.1.0",
       "detail": "pkgs/browser.json",
       "description": "Playwright verb engine behind Ikenga's /iyke/browser/* contract — replaces the Rust chromiumoxide Chrome engine (ADR-018). Managed (dedicated profile) + Attach (everyday Chrome via the official Playwright extension).",
+      "kind": "embedded"
+    },
+    {
+      "name": "@ikenga/pkg-content",
+      "latest": "0.3.0",
+      "detail": "pkgs/content.json",
+      "description": "Content — Pipeline (kanban + list), Calendar, Published over the production content schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
     },
     {
@@ -61,6 +68,13 @@
       "visibility": "hidden"
     },
     {
+      "name": "@ikenga/pkg-finance",
+      "latest": "0.3.0",
+      "detail": "pkgs/finance.json",
+      "description": "Finance — Overview / Transactions / Receivables / Inter-Company / Reports over the production finance schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
+      "kind": "embedded"
+    },
+    {
       "name": "@ikenga/pkg-hello",
       "latest": "0.1.0",
       "detail": "pkgs/hello.json",
@@ -70,28 +84,42 @@
     },
     {
       "name": "@ikenga/pkg-mail",
-      "latest": "0.2.1",
+      "latest": "0.3.0",
       "detail": "pkgs/mail.json",
       "description": "Mail — Inbox, Triage, All, Drafts over the production mail schema. No-build iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
     },
     {
+      "name": "@ikenga/pkg-outbound",
+      "latest": "0.3.0",
+      "detail": "pkgs/outbound.json",
+      "description": "Outbound — Email, Newsletter, Sequences, Social channels over the production outbound schema. No-build iframe pkg; deterministic CSS vendoring build.",
+      "kind": "embedded"
+    },
+    {
       "name": "@ikenga/pkg-research",
-      "latest": "0.1.0",
+      "latest": "0.2.0",
       "detail": "pkgs/research.json",
       "description": "Research — Reports (list+detail), Sources (monitored register), Personas (ICP grid) over the research_notes + research_sources schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
     },
     {
+      "name": "@ikenga/pkg-sales",
+      "latest": "0.3.0",
+      "detail": "pkgs/sales.json",
+      "description": "Sales — Pipeline, Forecast, Won over the production sales schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
+      "kind": "embedded"
+    },
+    {
       "name": "@ikenga/pkg-strategy",
-      "latest": "0.1.0",
+      "latest": "0.2.0",
       "detail": "pkgs/strategy.json",
       "description": "Strategy — OKR board (board + list), Cycles, Reviews over the production strategy schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
     },
     {
       "name": "@ikenga/pkg-tasks",
-      "latest": "0.8.2",
+      "latest": "0.8.3",
       "detail": "pkgs/tasks.json",
       "description": "Tasks — List, Agenda, Triage over the production tasks schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"

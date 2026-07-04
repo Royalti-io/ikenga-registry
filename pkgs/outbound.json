@@ -1,0 +1,140 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/pkg-outbound",
+  "updatedAt": "2026-07-04T17:57:17.464Z",
+  "versions": [
+    {
+      "version": "0.3.0",
+      "publishedAt": "2026-07-04T17:56:54.394Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-outbound/-/pkg-outbound-0.3.0.tgz",
+      "integrity": "sha512-WhKBKtpV+K3KyCwrycuLlXPzjyWfbhovzEsVbrrbz0sXV4h2nb9aARQt3njFAh9tqyWPpq8YZpDi0CeVsJCFuQ==",
+      "size": 610777,
+      "manifest": {
+        "id": "com.ikenga.outbound",
+        "name": "Outbound",
+        "version": "0.3.0",
+        "ikenga_api": "1",
+        "kind": "embedded",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {
+          "nav": [
+            {
+              "id": "outbound.index",
+              "label": "Outbox",
+              "icon": "send",
+              "section": "ops",
+              "route": "/pkg/com.ikenga.outbound/"
+            },
+            {
+              "id": "outbound.approvals",
+              "label": "Approvals",
+              "icon": "check-circle",
+              "section": "ops",
+              "route": "/pkg/com.ikenga.outbound/approvals"
+            }
+          ],
+          "routes": [
+            {
+              "path": "/",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            },
+            {
+              "path": "/email",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            },
+            {
+              "path": "/newsletter",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            },
+            {
+              "path": "/social",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            },
+            {
+              "path": "/sequences",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            },
+            {
+              "path": "/approvals",
+              "kind": "iframe",
+              "source": "dist/index.html"
+            }
+          ],
+          "csp": {
+            "script-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "style-src": [
+              "'self'",
+              "'unsafe-inline'",
+              "https://esm.sh"
+            ],
+            "font-src": [
+              "'self'",
+              "https://esm.sh",
+              "data:"
+            ],
+            "connect-src": [
+              "'self'",
+              "https://esm.sh"
+            ]
+          }
+        },
+        "capabilities": {
+          "sqlite": {
+            "db": "ikenga.local"
+          },
+          "paActions": true,
+          "http": {
+            "auth_secret": "twenty"
+          },
+          "secrets": {
+            "declarations": [
+              {
+                "name": "twenty",
+                "vault_key": "TWENTY_API_KEY"
+              }
+            ]
+          }
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [
+            "https://esm.sh",
+            "https://twenty.royalti.io/rest/"
+          ],
+          "sqlite.tables": [
+            "pa_action_drafts",
+            "receivables",
+            "newsletter_sends"
+          ],
+          "vault.keys": [
+            "TWENTY_API_KEY"
+          ],
+          "engine": [
+            "invoke"
+          ]
+        },
+        "requires": [
+          {
+            "kind": "skill",
+            "name": "skill-outbound"
+          }
+        ]
+      },
+      "deps": []
+    }
+  ]
+}
