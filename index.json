@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-07-04T22:35:17.857Z",
+  "updatedAt": "2026-07-10T00:44:18.187Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -17,6 +17,13 @@
       "kind": "skill"
     },
     {
+      "name": "@ikenga/pkg-agent-ops",
+      "latest": "0.2.2",
+      "detail": "pkgs/agent-ops.json",
+      "description": "Agent Ops — schedule observability, run history, and failure triage over ikenga.db. Multi-file iframe pkg, no build step.",
+      "kind": "embedded"
+    },
+    {
       "name": "@ikenga/pkg-browser",
       "latest": "0.1.0",
       "detail": "pkgs/browser.json",
@@ -25,7 +32,7 @@
     },
     {
       "name": "@ikenga/pkg-content",
-      "latest": "0.3.0",
+      "latest": "0.4.0",
       "detail": "pkgs/content.json",
       "description": "Content — Pipeline (kanban + list), Calendar, Published over the production content schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
@@ -69,7 +76,7 @@
     },
     {
       "name": "@ikenga/pkg-finance",
-      "latest": "0.3.0",
+      "latest": "0.3.1",
       "detail": "pkgs/finance.json",
       "description": "Finance — Overview / Transactions / Receivables / Inter-Company / Reports over the production finance schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
@@ -91,28 +98,28 @@
     },
     {
       "name": "@ikenga/pkg-outbound",
-      "latest": "0.3.0",
+      "latest": "0.3.1",
       "detail": "pkgs/outbound.json",
       "description": "Outbound — Email, Newsletter, Sequences, Social channels over the production outbound schema. No-build iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
     },
     {
       "name": "@ikenga/pkg-research",
-      "latest": "0.2.0",
+      "latest": "0.3.0",
       "detail": "pkgs/research.json",
       "description": "Research — Reports (list+detail), Sources (monitored register), Personas (ICP grid) over the research_notes + research_sources schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
     },
     {
       "name": "@ikenga/pkg-sales",
-      "latest": "0.3.0",
+      "latest": "0.4.0",
       "detail": "pkgs/sales.json",
       "description": "Sales — Pipeline, Forecast, Won over the production sales schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
     },
     {
       "name": "@ikenga/pkg-strategy",
-      "latest": "0.2.0",
+      "latest": "0.3.0",
       "detail": "pkgs/strategy.json",
       "description": "Strategy — OKR board (board + list), Cycles, Reviews over the production strategy schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
       "kind": "embedded"
