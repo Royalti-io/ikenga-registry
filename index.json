@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-07-10T00:44:18.187Z",
+  "updatedAt": "2026-07-13T06:12:26.058Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -122,6 +122,13 @@
       "latest": "0.3.0",
       "detail": "pkgs/strategy.json",
       "description": "Strategy — OKR board (board + list), Cycles, Reviews over the production strategy schema. Multi-file iframe pkg; deterministic CSS vendoring build.",
+      "kind": "embedded"
+    },
+    {
+      "name": "@ikenga/pkg-studio",
+      "latest": "0.2.0",
+      "detail": "pkgs/studio.json",
+      "description": "com.ikenga.studio app pkg — project sidecar (storyboard/render queue + HuggingFace and Excalidraw renderer adapters), FFmpeg-backed exporter, and a 40-tool MCP server; iframe UI in progress.",
       "kind": "embedded"
     },
     {
