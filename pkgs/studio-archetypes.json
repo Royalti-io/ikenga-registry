@@ -1,0 +1,45 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/studio-archetypes",
+  "updatedAt": "2026-07-18T06:22:59.803Z",
+  "versions": [
+    {
+      "version": "0.2.1",
+      "publishedAt": "2026-07-18T06:14:51.111Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/studio-archetypes/-/studio-archetypes-0.2.1.tgz",
+      "integrity": "sha512-SwboJHSgB3PwTk/RuRU2hB8AX3oApg/h/5KLRjU6zqLkgWYYOfQy6h62raFX6VlsqIdXWV3o3zLilXoIJT4gLw==",
+      "size": 2618291,
+      "manifest": {
+        "id": "com.ikenga.studio-archetypes",
+        "name": "Studio Archetypes",
+        "version": "0.2.1",
+        "ikenga_api": "1",
+        "kind": "bundle",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [],
+          "sqlite.tables": [],
+          "vault.keys": []
+        }
+      },
+      "deps": [],
+      "members": [
+        "animation-patterns",
+        "archetype-ai-short",
+        "archetype-explainer",
+        "archetype-montage",
+        "archetype-music-video",
+        "archetype-narrative",
+        "archetype-product",
+        "archetype-tutorial",
+        "studio-core-blocks"
+      ]
+    }
+  ]
+}

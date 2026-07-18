@@ -1,0 +1,43 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/studio-toolchain",
+  "updatedAt": "2026-07-18T06:22:59.803Z",
+  "versions": [
+    {
+      "version": "0.2.1",
+      "publishedAt": "2026-07-18T06:14:50.137Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/studio-toolchain/-/studio-toolchain-0.2.1.tgz",
+      "integrity": "sha512-OX3Ehg+NsCWCme+e/FE2idKkJisOOS/5qTS604EopWshlHKpXj51Au5MGjBDZiGdpm0tqS7VbuxVhgJxLyHk2Q==",
+      "size": 31532,
+      "manifest": {
+        "id": "com.ikenga.studio-toolchain",
+        "name": "Studio Toolchain",
+        "version": "0.2.1",
+        "ikenga_api": "1",
+        "kind": "bundle",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [],
+          "sqlite.tables": [],
+          "vault.keys": []
+        }
+      },
+      "deps": [],
+      "members": [
+        "freeform-video",
+        "generate-narration",
+        "studio-archetype-build",
+        "studio-block-author",
+        "studio-init",
+        "studio-oneshot",
+        "studio-watch"
+      ]
+    }
+  ]
+}

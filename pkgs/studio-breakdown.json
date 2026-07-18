@@ -1,0 +1,34 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/studio-breakdown",
+  "updatedAt": "2026-07-18T06:22:59.803Z",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "publishedAt": "2026-07-18T06:14:50.224Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/studio-breakdown/-/studio-breakdown-0.2.0.tgz",
+      "integrity": "sha512-p7cte3bEcJUE/SKsBFXhf7N/2mFym9xje6OFm8QSY/BDIdc/PJ7dg3sMjBcD9GUH59u+m9O2LLUQHxYEVKCq+w==",
+      "size": 29886,
+      "manifest": {
+        "id": "com.ikenga.studio-breakdown",
+        "name": "Studio Breakdown",
+        "version": "0.2.0",
+        "ikenga_api": "1",
+        "kind": "skill",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [],
+          "sqlite.tables": [],
+          "vault.keys": []
+        }
+      },
+      "deps": []
+    }
+  ]
+}
