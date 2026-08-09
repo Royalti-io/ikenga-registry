@@ -60,13 +60,6 @@
       "visibility": "hidden"
     },
     {
-      "name": "@ikenga/pkg-engine-gemini",
-      "latest": "0.2.1",
-      "detail": "pkgs/engine-gemini.json",
-      "description": "Gemini CLI engine adapter for Ikenga.",
-      "kind": "engine"
-    },
-    {
       "name": "@ikenga/pkg-engine-noop",
       "latest": "0.1.2",
       "detail": "pkgs/engine-noop.json",
