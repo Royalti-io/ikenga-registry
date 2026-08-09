@@ -1,0 +1,81 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/pkg-engine-antigravity",
+  "updatedAt": "2026-08-09T20:05:55.590Z",
+  "versions": [
+    {
+      "version": "0.2.2",
+      "publishedAt": "2026-08-09T20:05:55.810Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/pkg-engine-antigravity/-/pkg-engine-antigravity-0.2.2.tgz",
+      "integrity": "sha512-ohXdl3Shl6FZ8EKW7ZKI7yGoRTTNIBCqKPyr1IFC5Lk62RMgZzN3rfLvoh9tQeZ4Oa8DYvaVMu5OYYy9Ic8Bpg==",
+      "size": 63396,
+      "manifest": {
+        "id": "com.ikenga.engine-antigravity",
+        "name": "Antigravity CLI Engine",
+        "version": "0.2.2",
+        "ikenga_api": "1",
+        "kind": "engine",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "ui": {},
+        "permissions": {
+          "shell.execute": [
+            "agy"
+          ],
+          "fs.read": [
+            "$pkg_data/sessions/**"
+          ],
+          "fs.write": [
+            "$pkg_data/sessions/**"
+          ]
+        },
+        "settings": {
+          "schema": [
+            {
+              "key": "antigravity_binary",
+              "type": "string",
+              "label": "Path to `agy` CLI",
+              "default": "agy",
+              "description": "Resolved against $PATH if not absolute."
+            },
+            {
+              "key": "model",
+              "type": "string",
+              "label": "Default model",
+              "default": "gemini-3.5-flash-medium"
+            }
+          ]
+        },
+        "engine": {
+          "agentId": "antigravity-cli",
+          "display": "Antigravity CLI",
+          "capabilities": {
+            "streaming": false,
+            "toolUse": true,
+            "thinking": true,
+            "artifacts": true,
+            "fileAttachments": true,
+            "imageInput": false,
+            "slashCommands": true,
+            "modelSwitching": false,
+            "promptCaching": true,
+            "agenticTools": true,
+            "mcp": true,
+            "sessionResume": true
+          },
+          "onboarding": {
+            "requiredVaultKeys": [
+              "GEMINI_API_KEY"
+            ],
+            "requiredEnvVars": [],
+            "authCommand": "agy models",
+            "docsUrl": "https://antigravity.google/"
+          }
+        }
+      },
+      "deps": []
+    }
+  ]
+}

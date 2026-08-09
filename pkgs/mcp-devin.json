@@ -1,0 +1,53 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/mcp-devin",
+  "updatedAt": "2026-08-09T20:05:55.590Z",
+  "versions": [
+    {
+      "version": "0.2.0",
+      "publishedAt": "2026-08-09T20:05:56.011Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/mcp-devin/-/mcp-devin-0.2.0.tgz",
+      "integrity": "sha512-Objr+s5L4hAwHBfJfLgMCAZ0qPJBVR37fU5y8yl/J5u4kEww4nBdL7K/arbMsn/7tsVrrld6EO9MMAbfhVkqBA==",
+      "size": 106433,
+      "manifest": {
+        "id": "com.ikenga.mcp-devin",
+        "name": "Devin MCP Bridge",
+        "version": "0.2.0",
+        "ikenga_api": "1",
+        "kind": "skill",
+        "author": {
+          "name": "Royalti, Inc.",
+          "key": "royalti"
+        },
+        "mcp": [
+          {
+            "name": "devin",
+            "command": "bun",
+            "args": [
+              "run",
+              "src/index.ts"
+            ],
+            "lifecycle": "long-lived",
+            "restart_when_changed": [
+              "src/**"
+            ],
+            "auto_restart": true
+          }
+        ],
+        "permissions": {
+          "shell.execute": [
+            "bun",
+            "devin"
+          ],
+          "fs.read": [
+            "$pkg_data/**"
+          ],
+          "fs.write": [
+            "$pkg_data/tasks/**"
+          ]
+        }
+      },
+      "deps": []
+    }
+  ]
+}
