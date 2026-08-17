@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-08-09T20:05:55.590Z",
+  "updatedAt": "2026-08-17T04:59:03.786Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -18,7 +18,7 @@
     },
     {
       "name": "@ikenga/mcp-iyke",
-      "latest": "0.2.1",
+      "latest": "0.2.2",
       "detail": "pkgs/mcp-iyke.json",
       "description": "Model Context Protocol (MCP) server that exposes the Ikenga desktop app's iyke control bridge — drive a running Tauri AI workspace from any MCP client (Claude, Cursor, etc.).",
       "kind": "skill"
@@ -146,10 +146,24 @@
       "kind": "embedded"
     },
     {
+      "name": "@ikenga/skill-groundwork",
+      "latest": "0.6.1",
+      "detail": "pkgs/skill-groundwork.json",
+      "description": "Reusable research → design → plan → orchestrate → act skill for Claude Code.",
+      "kind": "skill"
+    },
+    {
       "name": "@ikenga/skill-thunderbird",
       "latest": "0.2.0",
       "detail": "pkgs/skill-thunderbird.json",
       "description": "Thunderbird mail skill — read/search the local Thunderbird mbox store and save reply drafts to the IMAP server.",
+      "kind": "skill"
+    },
+    {
+      "name": "@ikenga/storyboard-workflow",
+      "latest": "0.2.1",
+      "detail": "pkgs/storyboard-workflow.json",
+      "description": "Engine-agnostic 3-pass storyboard workflow. The only Studio-coupled fragment is an optional --mode personal block that stays inert elsewhere.",
       "kind": "skill"
     },
     {
@@ -171,10 +185,24 @@
       ]
     },
     {
+      "name": "@ikenga/studio-beat-detect",
+      "latest": "0.2.1",
+      "detail": "pkgs/studio-beat-detect.json",
+      "description": "Portable beat-detection skill — self-contained beat_detect.py (stdlib + optional librosa/madmom). Zero Ikenga runtime calls; usable by any agent via npx skills add.",
+      "kind": "skill"
+    },
+    {
       "name": "@ikenga/studio-breakdown",
       "latest": "0.2.0",
       "detail": "pkgs/studio-breakdown.json",
       "description": "Turn a script into a populated Studio storyboard in one pass — segment into shots (cells) and extract characters/locations/props as reusable seed-locked anchors. Agent-driven via the com.ikenga.studio MCP; generates nothing (no spend) — it proposes a board for the human to approve.",
+      "kind": "skill"
+    },
+    {
+      "name": "@ikenga/studio-doctor",
+      "latest": "0.2.1",
+      "detail": "pkgs/studio-doctor.json",
+      "description": "Studio toolchain preflight — pure-shell check.sh that verifies the local render stack. Zero coupling; independently useful as a doctor/preflight skill.",
       "kind": "skill"
     },
     {
@@ -192,6 +220,13 @@
         "studio-oneshot",
         "studio-watch"
       ]
+    },
+    {
+      "name": "@ikenga/video-script-structure",
+      "latest": "0.2.1",
+      "detail": "pkgs/video-script-structure.json",
+      "description": "Pure schema/convention doc for video script structure. Engine-agnostic, zero deps — a reusable authoring convention any agent can adopt.",
+      "kind": "skill"
     }
   ]
 }

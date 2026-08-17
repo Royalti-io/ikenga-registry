@@ -1,0 +1,34 @@
+{
+  "$schemaVersion": 1,
+  "name": "@ikenga/skill-groundwork",
+  "updatedAt": "2026-08-17T04:59:03.786Z",
+  "versions": [
+    {
+      "version": "0.6.1",
+      "publishedAt": "2026-08-17T04:58:41.987Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/skill-groundwork/-/skill-groundwork-0.6.1.tgz",
+      "integrity": "sha512-yUbpmX/sLFW4bbzbAwt4V8nHFJscERvc63TpWtoCDt3d5FWkKLxFr3sy9gQg5Yjqve6B2Ul5fbPRB2RdljAelw==",
+      "size": 1770591,
+      "manifest": {
+        "id": "com.ikenga.skill-groundwork",
+        "name": "Groundwork",
+        "version": "0.6.1",
+        "ikenga_api": "1",
+        "kind": "skill",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [],
+          "sqlite.tables": [],
+          "vault.keys": []
+        }
+      },
+      "deps": []
+    }
+  ]
+}
