@@ -1,6 +1,6 @@
 {
   "$schemaVersion": 1,
-  "updatedAt": "2026-08-17T04:59:03.786Z",
+  "updatedAt": "2026-08-17T19:56:55.872Z",
   "pkgs": [
     {
       "name": "@ikenga/mcp-browser",
@@ -154,7 +154,7 @@
     },
     {
       "name": "@ikenga/skill-thunderbird",
-      "latest": "0.2.0",
+      "latest": "0.2.1",
       "detail": "pkgs/skill-thunderbird.json",
       "description": "Thunderbird mail skill — read/search the local Thunderbird mbox store and save reply drafts to the IMAP server.",
       "kind": "skill"

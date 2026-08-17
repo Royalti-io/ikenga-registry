@@ -1,8 +1,40 @@
 {
   "$schemaVersion": 1,
   "name": "@ikenga/skill-thunderbird",
-  "updatedAt": "2026-06-28T23:43:10.459Z",
+  "updatedAt": "2026-08-17T19:56:55.872Z",
   "versions": [
+    {
+      "version": "0.2.1",
+      "publishedAt": "2026-08-17T19:56:56.072Z",
+      "tarball": "https://registry.npmjs.org/@ikenga/skill-thunderbird/-/skill-thunderbird-0.2.1.tgz",
+      "integrity": "sha512-CR9rVobCyP7JBF6RYcIxDbZJjWWeDFfhFXkXMsW4XgTCM6DsKifkRoH3d4tIoTVz/x/LD1w5MSDhm8V3LQIQXg==",
+      "size": 26217,
+      "manifest": {
+        "id": "com.ikenga.skill-thunderbird",
+        "name": "Thunderbird Mail",
+        "version": "0.2.1",
+        "ikenga_api": "1",
+        "kind": "skill",
+        "author": {
+          "name": "Royalti",
+          "key": "royalti"
+        },
+        "permissions": {
+          "shell.execute": [],
+          "fs.read": [],
+          "fs.write": [],
+          "net": [
+            "imap://*",
+            "imaps://*"
+          ],
+          "sqlite.tables": [],
+          "vault.keys": [
+            "*IMAP*"
+          ]
+        }
+      },
+      "deps": []
+    },
     {
       "version": "0.2.0",
       "publishedAt": "2026-06-28T23:43:10.677Z",
